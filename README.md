@@ -1,5 +1,7 @@
 # 42-ft_irc
 
+Remarque : ce projet sera supprimé le 31 mai 2024 car je n'en suis pas l'auteure. 
+
 ## Étapes préliminaires
 
 Installer le client IRC irssi ( = client de référence) :
