@@ -1,7 +1,5 @@
 # 42-ft_irc
 
-Remarque : ce projet sera supprimé le 31 mai 2024 car je n'en suis pas l'auteure. 
-
 ## Étapes préliminaires
 
 Installer le client IRC irssi ( = client de référence) :
@@ -54,6 +52,41 @@ PASS <server_password>
 USER <user> <mode(unused)> <host(unused> <realname>
 NICK <nickname>
 #PASS mdp
-#USER irene 0 0 IreneDumenil
-#NICK reni
+#USER John 0 0 JohnSmith
+#NICK johny
 ```
+
+## Commandes
+
+Une fois que la connexion a été établie avec IRSSI ou NetCat, tester les commandes possibles.
+
+Ne pas oublier d’ajouter un / avant chaque commande pour IRSSI. 
+
+* `INFO` : affiche les informations du serveur : 
+
+```bash
+INFO
+```
+
+* `ADMIN` : affiche les informations de l’administrateur du serveur : 
+
+```bash
+ADMIN
+```
+
+* `NAMES` : affiche les noms des utilisateurs : 
+
+```bash
+NAMES
+```
+
+* `JOIN` : Rejoindre un canal ou en créer un s’il n’existe pas :
+
+```bash
+#sur nc :
+JOIN <#nom_du_canal>
+
+#sur irssi : 
+/JOIN <nom_du_canal>
+```
+L'utilisateur qui crée le canal a automatiquement le rôle d'operator
