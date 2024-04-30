@@ -37,7 +37,7 @@
 
 # define ADMIN_INFO_1 "Perpignan, France"
 # define ADMIN_INFO_2 "Welcome"
-# define ADMIN_EMAIL "idumenil@student.42perpignan.fr orauline@student.42perpignan.fr"
+# define ADMIN_EMAIL "idumenil@student.42perpignan.fr sjavary@student.42perpignan.fr"
 
 bool is_in( char c, std::string str );
 
