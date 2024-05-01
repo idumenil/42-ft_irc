@@ -117,17 +117,29 @@ Effectuer les mêmes tests que précédemment, mais ajouter un / avant chaque co
 /JOIN canal_test
 ```
 
+Dans la suite des tests, figuront dans un premier la commande pour nc puis la commande pour irssi.
+
 ### Networking specials
 
 Pour tuer un client : Ctrl + C
 
 ### Clients commands
 
-Pour vérifier `PRIVMSG` et `NOTICE` , lancer 3 clients via ‘nc’ puis irssi puis taper la commande :
+Lancer à nouveau 3 clients avec nc ou irssi.
+Pour envoyer un message privé à quelqu'un PRIVMSG :
 
 ```bash
-PRIVMSG JohnDoe "coucou"
+PRIVMSG JohnDoe coucou
+#ecrire commande irssi
 ```
+
+Pour envoyer un message à tous les membres du canal : 
+
+```bash
+PRIVMSG #random coucou
+#pas besoin de commande en particulier pour irssi, il suffit d'écrire le message dans le canal
+```
+
 
 **Commandes d’operators :** 
 
@@ -136,13 +148,15 @@ Ouvrir 3 clients A B C et tester les commandes suivantes.
 `TOPIC` : change ou affiche le sujet du canal
 
 ```bash
-TOPIC <channel_name> <message>
+TOPIC <#channel_name> <message>
+/TOPIC <channel_name> <message>
 ```
 
 `KICK` : éjecte un utilisateur
 
 ```bash
-KICK <nick_name> <channel_name>
+KICK <#channel_name> <nick_name>
+/KICK <nick_name> <channel_name>
 ```
 
 Vérifier avec `NAMES` si besoin.
