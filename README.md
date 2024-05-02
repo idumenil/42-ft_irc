@@ -9,7 +9,7 @@ sudo apt install irssi
 Installer les fichiers de développement OpenSSL : 
 
 ```bash
-sudo apt-get install libssl-dev
+sudo apt install libssl-dev
 ```
 
 ## Correction
